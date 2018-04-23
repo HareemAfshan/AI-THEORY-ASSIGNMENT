@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Cleans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Cleans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Maids"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Punes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Rest_Rooms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Manage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Manage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Librarian"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Library"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Protect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Protect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Guards"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Provide_Help -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Provide_Help">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Dean"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Librarian"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Punes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Studies_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Studies_from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Supervise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Supervise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Dean"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#teaches">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#works -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#works">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Boards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Boards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Classes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Books -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Books">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Boys -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Boys">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Rest_Rooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Canteen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Canteen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Chairs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Chairs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Classes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Classes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Computers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Computers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Labs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Dean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Dean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Girls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Girls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Rest_Rooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Guards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Guards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Labs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Labs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Librarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Librarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Maids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Maids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Markers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Markers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Classes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Meals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Meals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Canteen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Projectors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Projectors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Classes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Punes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Punes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Rest_Rooms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Rest_Rooms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Shelves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Shelves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#ALI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#ALI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#AMNA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#AMNA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Adnan_Alam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Adnan_Alam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Ambreen_Altaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Ambreen_Altaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#English">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Books"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Farrukh_Jamal_Alvi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Farrukh_Jamal_Alvi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Imtiaz_Arif -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Imtiaz_Arif">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Dean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Islamiat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Islamiat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Shelves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#KASHIF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#KASHIF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Let_Us_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Let_Us_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Books"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Mathematics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Shelves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Maths -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Maths">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Books"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Noman_Islam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Noman_Islam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Shelves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Ridah_fatima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Ridah_fatima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Teachers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#SARA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#SARA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/m.shaheryar/ontologies/2018/3/untitled-ontology-8#Students"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
